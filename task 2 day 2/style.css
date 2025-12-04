@@ -1,0 +1,81 @@
+
+.navbar{
+    display:flex;
+    background-color: black;
+    color:white;
+    justify-content:space-between;
+    align-items:center;
+    /*display:none;->remove the element from the webpage
+    visibility: hidden;-> hide the element but occupied the space*/
+}
+
+.nav-items{
+    display:flex;
+    gap:20px;
+}
+
+.btn-group{
+    display:flex;
+    gap:10px;
+}
+
+.btn-group .signin{
+    background-color:blue;
+    color:white;
+    padding:8px;
+    margin:2px;
+    border-radius:10px;
+}
+.btn-group .login{
+    background-color:black;
+    color: white;
+    border:none;
+}
+.button{
+    background-color:rgb(89, 255, 0);
+    transition: background 1s;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    animation: bounce 1s infinite;
+}
+
+.button:hover{
+    background: rgb(0, 229, 255);
+    color:white;
+    transform: scale(1.3);
+}
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    20% { transform: translateY(10px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+.Heart{
+    width:50px;
+    height:50px;
+    margin:auto;
+    background-color: pink;
+    border-radius: 100px;
+    animation: heartbeat 1s infinite;
+}
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.2); }
+    100% { transform: scale(-1); }
+}
+@media(min-width:480px) and (max-width:768px){
+    .button{
+        background: lightgray;
+    }
+}
+/*@media(max-width:768px){
+
+.navbar{
+    display:none;
+
+}
+}
+*/
