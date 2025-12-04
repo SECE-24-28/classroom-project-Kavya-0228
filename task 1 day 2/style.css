@@ -1,0 +1,30 @@
+.card{
+    width:300px;
+    border: 1px solid black;
+    padding:15px;
+    background-color: grey;
+    
+}
+.card img{
+    width:100%;
+   
+}
+.content{
+    padding: 20px;
+    background-color: white;
+}
+.content h1{
+    margin:0;
+    color:black
+}
+.content button{
+    width: 100%;
+    background-color: rgb(20, 169, 195);
+    padding:10px 20px;
+    border:none;
+}
+@media (max-width:768px){
+    .card{
+        width:100%;
+    }
+}
