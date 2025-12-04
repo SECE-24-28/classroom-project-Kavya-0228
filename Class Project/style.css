@@ -1,0 +1,58 @@
+/*0 - 1 - 1*/ 
+.parent h1{
+    color: blueviolet;
+}
+/*0 - 0 - 2*/
+div h1{
+    color: orange;
+}
+/* Specificity */
+/* 0- 0- 0- */
+/* id - class - element */
+h1{
+    color: pink;
+}
+/*1 - 0 - 0*/
+#red{
+    color: maroon;
+}
+.yellow{
+    color: yellow;
+}
+/*pseudo selector */
+/* 0 - 1 - 1*/
+h1:hover{
+    color: purple;
+}
+button{
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 30px;
+}
+button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.Parent{
+    background-color: red;
+    width:500px;
+    padding:20px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+}
+.Child{
+    padding: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+.long{
+    padding-top: 0;
+    height: 100px;
+}
